@@ -1,0 +1,7 @@
+header.header {
+  .overlay {
+    a {
+      @extend %button;
+    }
+  }
+}

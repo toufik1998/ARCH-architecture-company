@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 1.3rem 0;
+  max-height: 5rem;
+
+  &-brand {
+    color: $gold-color;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+  }
+
+  &-nav {
+    .nav-item {
+      a {
+        color: $white-color;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        transition: all 0.3s ease-in;
+
+        @media (max-width: $medium) {
+          background-color: $blued-color;
+          margin-bottom: 10px;
+          padding-left: 1rem;
+          color: $white-color;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $gold-color;
+          border-left: 5px solid $gold-color;
+          border-bottom: 5px solid $gold-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar.noTransparent {
+  background-color: $white-color;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar.noTransparent .nav-item a.nav-link {
+  color: $grey-color;
+
+  @media (max-width: $medium) {
+    color: $white-color;
+  }
+}
+
+.navbar.noTransparent .nav-item a.nav-link:hover,
+.navbar.noTransparent .nav-item a.nav-link.active {
+  color: $gold-color;
+  border-left: 5px solid $gold-color;
+  border-bottom: 5px solid $gold-color;
+}
+
+.back-top {
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #ffb316;
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}

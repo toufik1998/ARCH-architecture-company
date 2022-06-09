@@ -1,0 +1,38 @@
+%centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%heading {
+  color: $blued-color;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+%button {
+  background-color: $gold-color;
+  color: $white-color;
+  text-transform: capitalize;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+%allp {
+  color: $grey-color;
+}
+
+%border-radius {
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-bottom-right-radius: 0;
+}
+
+%border-radius2 {
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
